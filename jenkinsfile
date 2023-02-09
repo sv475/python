@@ -3,7 +3,8 @@ pipeline {
    stages {
        stage('Build') {
           steps {
-             sh "echo Hello" 
+             git "https://github.com/sv475/python.git"
+             sh "cat python_test.py" 
            }
            }
     }
