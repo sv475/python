@@ -1,5 +1,8 @@
 name: 'first-pipeline'
 trigger: none
+
+variables:
+  sahil: "Verma"
 steps:
-  - script: echo "Hello I am from trigger one"
+  - script: echo "Hello I am $(sahil) from trigger one"
   - template: second-script.yml
