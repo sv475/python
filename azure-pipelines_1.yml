@@ -1,0 +1,5 @@
+name: 'first-pipeline'
+trigger: none
+steps:
+  - script: echo "Hello I am from trigger one"
+  - template: second-script.yml
