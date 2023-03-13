@@ -1,0 +1,15 @@
+name: Azure pipeline for strategy matrix test
+
+trigger: none
+
+jobs:
+- job: TestStrategy
+  strategy:
+   matrix:
+     Chandigarh:
+      location: 'Chandigarh'
+     Mohali:
+      location: 'Mohali'
+  steps:
+    - checkout: none
+    - script: echo "I am from $(location)"
